@@ -1,0 +1,421 @@
+{
+  "Tables": {
+    "EmployeeDetailsExtended": {
+      "Columns": {
+        "EmployeeID": {
+          "Type": "int",
+          "PrimaryKey": true,
+          "AutoIncrement": true
+        },
+        "LastName": {
+          "Type": "nvarchar(20)",
+          "Nullable": false
+        },
+        "FirstName": {
+          "Type": "nvarchar(10)",
+          "Nullable": false
+        },
+        "Title": {
+          "Type": "nvarchar(30)",
+          "Nullable": true
+        },
+        "TitleOfCourtesy": {
+          "Type": "nvarchar(25)",
+          "Nullable": true
+        },
+        "BirthDate": {
+          "Type": "datetime",
+          "Nullable": true
+        },
+        "HireDate": {
+          "Type": "datetime",
+          "Nullable": true
+        },
+        "Address": {
+          "Type": "nvarchar(60)",
+          "Nullable": true
+        },
+        "City": {
+          "Type": "nvarchar(15)",
+          "Nullable": true
+        },
+        "Region": {
+          "Type": "nvarchar(15)",
+          "Nullable": true
+        },
+        "PostalCode": {
+          "Type": "nvarchar(10)",
+          "Nullable": true
+        },
+        "Country": {
+          "Type": "nvarchar(15)",
+          "Nullable": true
+        },
+        "HomePhone": {
+          "Type": "nvarchar(24)",
+          "Nullable": true
+        },
+        "Extension": {
+          "Type": "nvarchar(4)",
+          "Nullable": true
+        },
+        "Notes": {
+          "Type": "ntext",
+          "Nullable": true
+        },
+        "ReportsTo": {
+          "Type": "int",
+          "Nullable": true
+        },
+        "PhotoPath": {
+          "Type": "nvarchar(255)",
+          "Nullable": true
+        },
+        "TotalOrders": {
+          "Type": "int",
+          "Nullable": true
+        },
+        "TotalSales": {
+          "Type": "float",
+          "Nullable": true
+        },
+        "TotalCustomers": {
+          "Type": "int",
+          "Nullable": true
+        }
+      }
+    },
+    "OrderLineItems": {
+      "Columns": {
+        "CategoryID": {
+          "Type": "int",
+          "Nullable": false
+        },
+        "CategoryName": {
+          "Type": "nvarchar(15)",
+          "Nullable": false
+        },
+        "CategoryDescription": {
+          "Type": "ntext",
+          "Nullable": true
+        },
+        "ShipperShipperId": {
+          "Type": "int",
+          "Nullable": false
+        },
+        "ShipperCompanyName": {
+          "Type": "nvarchar(40)",
+          "Nullable": false
+        },
+        "SupplierSupplierId": {
+          "Type": "int",
+          "Nullable": false
+        },
+        "SupplierCompanyName": {
+          "Type": "nvarchar(40)",
+          "Nullable": false
+        },
+        "SupplierContactName": {
+          "Type": "nvarchar(30)",
+          "Nullable": true
+        },
+        "SupplierContactTitle": {
+          "Type": "nvarchar(30)",
+          "Nullable": true
+        },
+        "SupplierCity": {
+          "Type": "nvarchar(15)",
+          "Nullable": true
+        },
+        "SupplierCountry": {
+          "Type": "nvarchar(15)",
+          "Nullable": true
+        },
+        "ProductsProductName": {
+          "Type": "nvarchar(40)",
+          "Nullable": false
+        },
+        "ProductsSupplierId": {
+          "Type": "int",
+          "Nullable": true
+        },
+        "ProductsCategoryId": {
+          "Type": "int",
+          "Nullable": true
+        },
+        "ProductsQuantityPerUnit": {
+          "Type": "nvarchar(20)",
+          "Nullable": true
+        },
+        "ProductsUnitPrice": {
+          "Type": "money",
+          "Nullable": true
+        },
+        "ProductsUnitsInStock": {
+          "Type": "smallint",
+          "Nullable": true
+        },
+        "ProductsUnitsOnOrder": {
+          "Type": "smallint",
+          "Nullable": true
+        },
+        "ProductsReorderLevel": {
+          "Type": "smallint",
+          "Nullable": true
+        },
+        "ProductsDiscontinued": {
+          "Type": "bit",
+          "Nullable": false
+        },
+        "OrderID": {
+          "Type": "int",
+          "Nullable": false
+        },
+        "ProductID": {
+          "Type": "int",
+          "Nullable": false
+        },
+        "UnitPrice": {
+          "Type": "money",
+          "Nullable": false
+        },
+        "Quantity": {
+          "Type": "smallint",
+          "Nullable": false
+        },
+        "Discount": {
+          "Type": "real",
+          "Nullable": false
+        },
+        "CustomerID": {
+          "Type": "nchar(5)",
+          "Nullable": false
+        },
+        "CompanyName": {
+          "Type": "nvarchar(40)",
+          "Nullable": false
+        },
+        "ContactName": {
+          "Type": "nvarchar(30)",
+          "Nullable": true
+        },
+        "ContactTitle": {
+          "Type": "nvarchar(30)",
+          "Nullable": true
+        },
+        "Address": {
+          "Type": "nvarchar(60)",
+          "Nullable": true
+        },
+        "City": {
+          "Type": "nvarchar(15)",
+          "Nullable": true
+        },
+        "Region": {
+          "Type": "nvarchar(15)",
+          "Nullable": true
+        },
+        "PostalCode": {
+          "Type": "nvarchar(10)",
+          "Nullable": true
+        },
+        "Country": {
+          "Type": "nvarchar(15)",
+          "Nullable": true
+        },
+        "Phone": {
+          "Type": "nvarchar(24)",
+          "Nullable": true
+        },
+        "Fax": {
+          "Type": "nvarchar(24)",
+          "Nullable": true
+        },
+        "EmployeeId": {
+          "Type": "int",
+          "Nullable": false
+        },
+        "EmployeeLastName": {
+          "Type": "nvarchar(20)",
+          "Nullable": false
+        },
+        "EmployeeFirstName": {
+          "Type": "nvarchar(10)",
+          "Nullable": false
+        },
+        "EmployeeTitle": {
+          "Type": "nvarchar(30)",
+          "Nullable": true
+        },
+        "EmployeeTitleOfCourtesy": {
+          "Type": "nvarchar(25)",
+          "Nullable": true
+        },
+        "EmployeePhotoPath": {
+          "Type": "nvarchar(255)",
+          "Nullable": true
+        },
+        "OrderOrderId": {
+          "Type": "int",
+          "Nullable": false
+        },
+        "OrderCustomerId": {
+          "Type": "nchar(5)",
+          "Nullable": true
+        },
+        "OrderOrderDate": {
+          "Type": "datetime",
+          "Nullable": true
+        },
+        "OrderRequiredDate": {
+          "Type": "datetime",
+          "Nullable": true
+        },
+        "OrderShippedDate": {
+          "Type": "datetime",
+          "Nullable": true
+        },
+        "OrderShipperId": {
+          "Type": "int",
+          "Nullable": true
+        },
+        "OrderFreight": {
+          "Type": "money",
+          "Nullable": true
+        },
+        "OrderShipCountry": {
+          "Type": "nvarchar(15)",
+          "Nullable": true
+        }
+      }
+    },
+    "OrderSummary": {
+      "Columns": {
+        "OrderId": {
+          "Type": "int",
+          "Nullable": false
+        },
+        "CustomerId": {
+          "Type": "nchar(5)",
+          "Nullable": true
+        },
+        "CustomerName": {
+          "Type": "nvarchar(40)",
+          "Nullable": false
+        },
+        "CustomerCountry": {
+          "Type": "nvarchar(15)",
+          "Nullable": true
+        },
+        "OrderDate": {
+          "Type": "datetime",
+          "Nullable": true
+        },
+        "RequiredDate": {
+          "Type": "datetime",
+          "Nullable": true
+        },
+        "ShippedDate": {
+          "Type": "datetime",
+          "Nullable": true
+        },
+        "ShipperName": {
+          "Type": "nvarchar(40)",
+          "Nullable": true
+        },
+        "SalesPerson": {
+          "Type": "nvarchar(32)",
+          "Nullable": false
+        },
+        "SalesPersonTitle": {
+          "Type": "nvarchar(30)",
+          "Nullable": true
+        },
+        "TotalItems": {
+          "Type": "int",
+          "Nullable": true
+        },
+        "TotalExtendedPrice": {
+          "Type": "money",
+          "Nullable": true
+        },
+        "Freight": {
+          "Type": "money",
+          "Nullable": true
+        },
+        "AvgDiscount": {
+          "Type": "float",
+          "Nullable": true
+        },
+        "DaysToShip": {
+          "Type": "int",
+          "Nullable": true
+        },
+        "DaysLate": {
+          "Type": "int",
+          "Nullable": true
+        }
+      }
+    },
+    "ProductSummary": {
+      "Columns": {
+        "ProductName": {
+          "Type": "nvarchar(40)",
+          "Nullable": false
+        },
+        "QuantityPerUnit": {
+          "Type": "nvarchar(20)",
+          "Nullable": true
+        },
+        "UnitPrice": {
+          "Type": "money",
+          "Nullable": true
+        },
+        "UnitsInStock": {
+          "Type": "smallint",
+          "Nullable": true
+        },
+        "ReorderLevel": {
+          "Type": "smallint",
+          "Nullable": true
+        },
+        "UnitsOnOrder": {
+          "Type": "smallint",
+          "Nullable": true
+        },
+        "Discontinued": {
+          "Type": "bit",
+          "Nullable": false
+        },
+        "CategoryName": {
+          "Type": "nvarchar(15)",
+          "Nullable": false
+        },
+        "CategoryDescription": {
+          "Type": "ntext",
+          "Nullable": true
+        },
+        "SupplierName": {
+          "Type": "nvarchar(40)",
+          "Nullable": false
+        },
+        "SupplierContact": {
+          "Type": "nvarchar(30)",
+          "Nullable": true
+        },
+        "SupplierContactTitle": {
+          "Type": "nvarchar(30)",
+          "Nullable": true
+        },
+        "SupplierCountry": {
+          "Type": "nvarchar(15)",
+          "Nullable": true
+        },
+        "SupplierHomePage": {
+          "Type": "ntext",
+          "Nullable": true
+        }
+      }
+    }
+  }
+}

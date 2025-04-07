@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Platforms>AnyCPU;x64</Platforms>
+    <UserSecretsId>2b0823f2-a99a-47aa-acb5-f663e6131619</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="NoSqlJson\**" />
+    <Compile Remove="results\**" />
+    <Content Remove="NoSqlJson\**" />
+    <Content Remove="results\**" />
+    <EmbeddedResource Remove="NoSqlJson\**" />
+    <EmbeddedResource Remove="results\**" />
+    <None Remove="NoSqlJson\**" />
+    <None Remove="results\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.3" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+    <PackageReference Include="Microsoft.SemanticKernel" Version="1.31.0" />
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.InMemory" Version="1.31.0-preview" />
+    <PackageReference Include="Microsoft.SemanticKernel.PromptTemplates.Handlebars" Version="1.31.0" />
+    <PackageReference Include="Reveal.Sdk.AspNetCore" Version="1.7.3" />
+    <PackageReference Include="Reveal.Sdk.Data" Version="1.7.3" />
+    <PackageReference Include="Reveal.Sdk.Data.Microsoft.SqlServer" Version="1.7.3" />
+    <PackageReference Include="Reveal.Sdk.Dom" Version="0.1.654-beta" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.1.0" />
+  </ItemGroup>
+
+</Project>
